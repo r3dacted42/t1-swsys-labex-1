@@ -38,6 +38,7 @@ int main(int argc, char** argv) {
         case __S_IFDIR: printf("directory\n"); break;
         case __S_IFCHR: printf("character device\n"); break;
         case __S_IFIFO: printf("named pipe (FIFO)\n"); break;
+        default: printf("<unknown type>\n");
     }
 
     return 0;
