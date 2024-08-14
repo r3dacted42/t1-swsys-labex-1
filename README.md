@@ -4,7 +4,7 @@ cs513 software systems; term 1, 2024-26
 ## instructions to run
 
 it is recommended to use the following script to run the C programs:
-```
+```bash
 #!/bin/bash
 
 args=""
