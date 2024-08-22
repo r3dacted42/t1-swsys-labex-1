@@ -38,5 +38,7 @@ to run any C program, use
 - however, for task 17, `17_makedb.c` must be run before `17_tickets.c` to make sure the 'database' file `.db` exists. similarly, task 18 uses a file called `.db1` for storing the records
 - task 18 requires several bits of input, but sometimes the input buffer has leftover newline characters that mess with the program. to deal with that, additional `getchar()` calls are placed at appropriate locations to clear the buffer
 - for task 26, you must run `26_create_executable.sh` before running the other parts
+- for task 29, failure occurs if su privileges are not available
+- task 30 starts a daemon that runs without a terminal window (orphan process), and prints a log message with the pid in `.log` every 10 seconds. it also executes `30_runner.sh` every 10 seconds which creates and modifies 2 txt files in the user home directory. `running.txt` is updated every 10 seconds, and `once.txt` is created once after 30 seconds have passed since the daemon was started.
   
 thank you
