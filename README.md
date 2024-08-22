@@ -20,7 +20,7 @@ then
         rm $exe
 fi
 ```
-save the script as runc.sh and use `chmod u+x runc.sh` to allow it to function properly. additionally, you can add the line `alias runc='<path-to-runc.sh>/runc.sh'` to the `~/.bashrc` file to use the script from any directory.
+save the script as runc.sh and use `chmod u+x runc.sh` to allow it to function properly. additionally, you can add the line `alias runc='<path-to-runc.sh>'` to the `~/.bashrc` file to use the script from any directory. don't forget to use a fresh terminal instance after editing `~/.bashrc`!
 
 to run any C program, use
 `runc <filename.c> <additional-args-here>`
@@ -36,6 +36,7 @@ to run any C program, use
 - for task 14, providing the filename as cmd line arg is required, as in `runc 14_filetype.c <filename>`
 - for tasks 16, 17 and 18, verification of the locks can be done by using the previously described `runc` command in different shell instances
 - however, for task 17, `17_makedb.c` must be run before `17_tickets.c` to make sure the 'database' file `.db` exists. similarly, task 18 uses a file called `.db1` for storing the records
-- task 18 requires several bits of input, but sometimes the input buffer has leftover newline characters that mess with the program. to deal with that, additional `getchar()` calls are placed at appropriate locations to clear the buffer (i tried using fflush(stdin) but that didn't seem to help).
+- task 18 requires several bits of input, but sometimes the input buffer has leftover newline characters that mess with the program. to deal with that, additional `getchar()` calls are placed at appropriate locations to clear the buffer
+- for task 26, you must run `26_create_executable.sh` before running the other parts
   
 thank you
