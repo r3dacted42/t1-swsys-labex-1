@@ -1,4 +1,5 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       13 August 2024
@@ -14,6 +15,7 @@ Date:       13 August 2024
     h. time of last access
     i. time of last modification
     j. time of last change
+========================================================================================
 */
 
 #include <stdio.h>

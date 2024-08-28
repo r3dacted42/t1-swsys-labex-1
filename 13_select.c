@@ -1,4 +1,5 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       13 August 2024
@@ -6,6 +7,7 @@ Date:       13 August 2024
 13. Write a program to wait for a STDIN for 10 seconds using select. 
 Write a proper print statement to verify whether the data is available 
 within 10 seconds or not (check in $man 2 select).
+========================================================================================
 */
 
 #include <stdio.h>

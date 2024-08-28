@@ -1,10 +1,12 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       22 August 2024
 
 20. Find out the priority of your running program. 
 Modify the priority with nice command.
+========================================================================================
 */
 
 #include <stdio.h>

@@ -1,4 +1,5 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       10 August 2024
@@ -6,6 +7,7 @@ Date:       10 August 2024
 5. Write a program to create five new files with infinite loop. 
 Execute the program in the background and check the file descriptor 
 table at /proc/pid/fd.
+========================================================================================
 */
 
 #include <stdio.h>

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# ========================================================================================
 # Name:       Priyansh Agrahari
 # Reg. No.:   MT2024120
 # Date:       8 August 2024
@@ -8,6 +8,7 @@
 #   a. soft link (symlink system call)
 #   b. hard link (link system call) <---
 #   c. FIFO (mkfifo Library Function or mknod system call)
+# ========================================================================================
 
 echo -n "enter the path to create hard link for: ";
 read fname;

@@ -1,9 +1,11 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       13 August 2024
 
 12. Write a program to find out the opening mode of a file. Use fcntl.
+========================================================================================
 */
 
 #include <stdio.h>

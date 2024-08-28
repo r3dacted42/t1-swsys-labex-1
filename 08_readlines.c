@@ -1,4 +1,5 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       10 August 2024
@@ -6,6 +7,7 @@ Date:       10 August 2024
 8. Write a program to open a file in read only mode, read line by line 
 and display each line as it is read. Close the file when end of file 
 is reached.
+========================================================================================
 */
 
 #include <stdio.h>

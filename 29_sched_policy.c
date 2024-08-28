@@ -1,10 +1,12 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       22 August 2024
 
 29. Write a program to get scheduling policy and modify the scheduling policy 
 (SCHED_FIFO, SCHED_RR).
+========================================================================================
 */
 
 #include <sched.h>

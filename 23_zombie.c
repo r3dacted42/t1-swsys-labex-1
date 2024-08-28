@@ -1,9 +1,11 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       22 August 2024
 
 23. Write a program to create a Zombie state of the running program.
+========================================================================================
 */
 
 #include <stdlib.h>

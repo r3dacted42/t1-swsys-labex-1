@@ -1,4 +1,5 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       13 August 2024
@@ -8,6 +9,7 @@ Date:       13 August 2024
     b. Implement read lock
 Create three records in a file. Whenever you access a particular record, 
 first lock it then modify/access to avoid race condition.
+========================================================================================
 */
 
 #include <stdio.h>

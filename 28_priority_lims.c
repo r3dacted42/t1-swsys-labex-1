@@ -1,9 +1,11 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       22 August 2024
 
 28. Write a program to get maximum and minimum real time priority.
+========================================================================================
 */
 
 #include <sched.h>

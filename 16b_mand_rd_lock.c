@@ -1,4 +1,5 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       13 August 2024
@@ -6,6 +7,7 @@ Date:       13 August 2024
 16. Write a program to perform mandatory locking.
     a. Implement write lock
     b. Implement read lock <---
+========================================================================================
 */
 
 #include <stdio.h>

@@ -1,4 +1,5 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       8 August 2024
@@ -7,6 +8,7 @@ Date:       8 August 2024
   a. soft link (symlink system call)
   b. hard link (link system call) <---
   c. FIFO (mkfifo Library Function or mknod system call)
+========================================================================================
 */
 
 #include <stdio.h>

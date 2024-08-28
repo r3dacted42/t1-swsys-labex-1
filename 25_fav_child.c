@@ -1,10 +1,12 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       22 August 2024
 
 25. Write a program to create three child processes. The parent should wait 
 for a particular child (use waitpid system call).
+========================================================================================
 */
 
 #include <stdlib.h>

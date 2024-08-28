@@ -1,10 +1,12 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       10 August 2024
 
 6. Write a program to take input from STDIN and display on STDOUT. 
 Use only read/write system calls.
+========================================================================================
 */
 
 #include <stdio.h>

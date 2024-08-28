@@ -1,10 +1,12 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       8 August 2024
 
 3. Write a program to create a file and print the file descriptor value. 
 Use creat ( ) system call
+========================================================================================
 */
 
 #include <stdio.h>

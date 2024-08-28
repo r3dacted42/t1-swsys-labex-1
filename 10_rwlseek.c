@@ -1,4 +1,5 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       13 August 2024
@@ -7,6 +8,7 @@ Date:       13 August 2024
 the file pointer by 10 bytes (use lseek) and write again 10 bytes.
     a. check the return value of lseek
     b. open the file with od and check the empty spaces in between the data.
+========================================================================================
 */
 
 #include <stdio.h>

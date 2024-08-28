@@ -1,10 +1,12 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       8 August 2024
 
 4. Write a program to open an existing file with read write mode. 
 Try O_EXCL flag also.
+========================================================================================
 */
 
 #include <stdio.h>

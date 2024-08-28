@@ -1,4 +1,5 @@
 /*
+========================================================================================
 Name:       Priyansh Agrahari
 Reg. No.:   MT2024120
 Date:       22 August 2024
@@ -7,6 +8,7 @@ Date:       22 August 2024
     a. use some executable program <---
     b. pass some input to an executable program. (for example execute an 
        executable of $./a.out name)
+========================================================================================
 */
 
 #include <stdio.h>
