@@ -13,14 +13,11 @@ Try O_EXCL flag also.
 #include <fcntl.h>
 #include <unistd.h>
 
-// syscall function prototype
-int open(const char *pathname, int flags);
-
 int main(void) {
     char fname[128];
-    printf("enter the filename to create: ");
+    printf("enter the filename to open: ");
     scanf("%s", fname);
-    int fd = creat(fname, O_RDWR);
+    int fd = open(fname, O_RDWR);
     // if O_CREAT | O_EXCL is used, then create fails with EEXIST
     // in case the file already exists. also, symbolic links are 
     // not followed in the pathname.
@@ -30,3 +27,17 @@ int main(void) {
 
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 04_rdwrt.c
+enter the filename to open: tempfile.txt
+fd of opened file: 3
+
+--using O_CREAT | O_EXCL
+$ runc 04_rdwrt.c
+enter the filename to open: tempfile.txt
+perror response: : File exists
+
+*/

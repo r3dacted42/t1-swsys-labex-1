@@ -43,3 +43,17 @@ int main(int argc, char** argv) {
 
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 14_filetype.c tempsl.txt
+the given pathname is a symbolic link
+
+$ runc 14_filetype.c /dev/sda
+the given pathname is a block device
+
+$ runc 14_filetype.c myfifo
+the given pathname is a named pipe (FIFO)
+
+*/

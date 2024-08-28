@@ -42,3 +42,18 @@ int main(int argc, char **argv) {
 
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 22_fork_write.c
+enter the filename to write to: temp_fork.txt
+read 55 bytes from file:
+written from parent process
+written from child process
+
+$ cat temp_fork.txt
+written from parent process
+written from child process
+
+*/

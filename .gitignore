@@ -1,4 +1,5 @@
-.db
-.db1
-*.txt
-*.o
+.db*
+myfifo*
+temp*.txt
+*.o*
+.log

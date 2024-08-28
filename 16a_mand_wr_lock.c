@@ -39,3 +39,27 @@ int main() {
 
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 16a_mand_wr_lock.c
+enter filename to apply write lock on: temp.txt
+trying to apply mandatory write lock on temp.txt...
+lock acquired, press enter to release...
+
+--on second terminal instance:
+$ runc 16a_mand_wr_lock.c
+enter filename to apply write lock on: temp.txt
+trying to apply mandatory write lock on temp.txt...
+
+--press enter on first instance:
+
+write lock released
+
+--on second instance, pressing enter after message:
+lock acquired, press enter to release...
+
+write lock released
+
+*/

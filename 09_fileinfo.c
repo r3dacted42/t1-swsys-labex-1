@@ -38,3 +38,23 @@ int main(void) {
     printf("i. time of last mod.: %ld\nj. time of last change: %ld\n", buf.st_mtime, buf.st_ctime);
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 09_fileinfo.c
+enter the filename to get info for: temphl.txt
+
+file info:
+a. inode: 29597
+b. num. of hard links: 2
+c. uid: 1000
+d. gid: 1000
+e. size: 30
+f. block size: 4096
+g. num. of blocks: 8
+h. time of last access: 1724836929
+i. time of last mod.: 1724322335
+j. time of last change: 1724837361
+
+*/

@@ -23,3 +23,21 @@ int main(void) {
   
   return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 01a_symlink.c
+enter the filename to create soft link for: temp.txt
+enter the soft link name: tempsl.txt
+perror response: : Success
+
+$ ll
+total 224
+drwxr-xr-x 3 r3dacted42 r3dacted42 4096 Aug 28 14:12 ./
+drwxr-xr-x 3 r3dacted42 r3dacted42 4096 Aug 13 15:53 ../
+...
+-rw-r--r-- 1 r3dacted42 r3dacted42   30 Aug 22 15:55 temp.txt
+lrwxrwxrwx 1 r3dacted42 r3dacted42    8 Aug 28 14:12 tempsl.txt -> temp.txt
+
+*/

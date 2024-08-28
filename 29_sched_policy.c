@@ -40,3 +40,26 @@ int main(void) {
 
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 29_sched_policy.c
+current scheduling policy is rr time-sharing
+select a policy to apply to current process:
+  0 : fifo
+  1 : round robin
+1
+sched_setscheduler failed with: : Operation not permitted
+
+$ gcc 29_sched_policy.c -o temp.o
+$ sudo ./temp.o
+[sudo] password for r3dacted42:
+current scheduling policy is rr time-sharing
+select a policy to apply to current process:
+  0 : fifo
+  1 : round robin
+1
+scheduling policy successfully set to round robin
+
+*/

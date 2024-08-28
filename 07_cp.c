@@ -53,3 +53,41 @@ int main(int argc, char** argv) {
     
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 07_cp.c README.md readme.markdown
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 128 bytes, wrote 128 bytes
+read 13 bytes, wrote 13 bytes
+file successfully copied!
+
+$ ll
+...
+-rw-r--r-- 1 r3dacted42 r3dacted42 2957 Aug 25 18:40 README.md
+-rw-r--r-- 1 r3dacted42 r3dacted42 2957 Aug 28 14:52 readme.markdown
+...
+
+*/

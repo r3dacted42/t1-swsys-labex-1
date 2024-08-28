@@ -78,3 +78,34 @@ int main(void) {
     close(fd);
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 11_dupfd.c
+enter the filename to open: tempdup.txt
+contents of file after appending with fd created by open:
+this was written through open.
+
+contents of file after appending with fd created by dup:
+this was written through open.
+this was written through dup.
+
+contents of file after appending with fd created by dup2:
+this was written through open.
+this was written through dup.
+this was written through dup2.
+
+contents of file after appending with fd created by fcntl:
+this was written through open.
+this was written through dup.
+this was written through dup2.
+this was written through fcntl.
+
+$ cat tempdup.txt
+this was written through open.
+this was written through dup.
+this was written through dup2.
+this was written through fcntl.
+
+*/

@@ -33,28 +33,18 @@ void init_records(int fd) {
     lseek(fd, prevpos, SEEK_SET);
 }
 
-// void flush_stdin() {
-//     char buf[1];
-//     while (read(0, buf, 1)) {
-//         if (buf[0] != '\n' && buf[0] != '\0') {
-//             ungetc(buf[0], stdin);
-//             break;
-//         }
-//     }
-// }
-
 int main(void) {
     int fd = open(".db1", O_RDWR);
     if (fd < 0) {
         fd = creat(".db1", 0777);
         init_records(fd);
+        close(fd);
+        fd = open(".db1", O_RDWR);
     }
     char ch = '\0';
     while (ch != 'q') {
         int rec_idx = -1;
         printf("which record would you like to access/modify? [1, 2, 3]\n");
-        // ch = getchar();
-        // rec_idx = ch - 48; // ascii -> integer value
         scanf("%d", &rec_idx);
         getchar(); // remove \n?
         if (rec_idx < 1 || rec_idx > 3) {
@@ -94,7 +84,7 @@ int main(void) {
             wr_lock.l_whence = SEEK_SET;
             wr_lock.l_pid = getpid();
             fcntl(fd, F_SETLKW, &wr_lock);
-            printf("acquired read lock for record %d!\n", rec_idx);
+            printf("acquired write lock for record %d!\n", rec_idx);
             record rec;
             rec.id = rec_idx;
             printf("enter the new data for record %d:\n", rec_idx);
@@ -115,6 +105,58 @@ int main(void) {
         }
         printf("enter [q] to quit or [c] to continue: ");
         ch = getchar();
+        close(fd);
+        fd = open(".db1", O_RDWR);
     }
     close(fd);
 }
+
+/*
+Sample Execution:
+
+--first instance:
+$ runc 18_record_lock.c
+which record would you like to access/modify? [1, 2, 3]
+2
+you selected record 2, would you like to view [v] contents or modify [m]?
+m
+trying to acquire write lock for record 2...
+acquired write lock for record 2!
+enter the new data for record 2:
+sample data for record two
+wrote 132 bytes.
+press enter to release write lock...
+
+--second instance:
+$ runc 18_record_lock.c 
+which record would you like to access/modify? [1, 2, 3]
+1
+you selected record 1, would you like to view [v] contents or modify [m]?
+m
+trying to acquire write lock for record 1...
+acquired write lock for record 1!
+enter the new data for record 1:
+other sample data for record one
+wrote 132 bytes.
+press enter to release write lock...
+
+--third instance:
+$ runc 18_record_lock.c
+which record would you like to access/modify? [1, 2, 3]
+2
+you selected record 2, would you like to view [v] contents or modify [m]?
+v
+trying to acquire read lock for record 2...
+
+--third instance after releasing write lock from first instance:
+acquired read lock for record 2!
+read 132 bytes:
+  id:   2
+  data: sample data for record two
+press enter to release read lock...
+
+((concurrent viewing/editing for different records is allowed, 
+but writing to the same record or viewing a record while it is 
+being edited in another instance is prohibited.))
+
+*/

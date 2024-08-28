@@ -12,3 +12,7 @@ int main(void) {
     while (1);
     return 0;
 }
+
+/*
+Check 02_proc.sh for Sample Execution...
+*/

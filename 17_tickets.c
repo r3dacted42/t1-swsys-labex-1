@@ -48,3 +48,25 @@ int main() {
 
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 17_tickets.c 
+trying to apply mandatory write lock on db file...
+read ticket number 0 from db file (4 bytes)
+wrote ticket number 1 to db file (4 bytes)
+lock acquired, press enter to release...
+
+--on second terminal instance:
+$ runc 17_tickets.c
+trying to apply mandatory write lock on db file...
+
+--after lifting lock from first instance:
+read ticket number 1 from db file (4 bytes)
+wrote ticket number 2 to db file (4 bytes)
+lock acquired, press enter to release...
+
+write lock released
+
+*/

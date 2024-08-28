@@ -19,3 +19,22 @@ then
 else
     echo "failed";
 fi
+
+<<sample
+Sample Execution:
+
+$ sh 01c_fifo.sh
+enter the filename of the fifo pipe: myfifo1
+success
+open the pipe in read mode to get the message
+
+--on another terminal instance:
+$ cat myfifo1
+hello there, this was written to the fifo pipe!
+
+$ ll
+...
+prw-r--r-- 1 r3dacted42 r3dacted42    0 Aug 28 14:29 myfifo1|
+...
+
+sample

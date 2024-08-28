@@ -19,3 +19,21 @@ then
 else
     echo "failed";
 fi
+
+<<sample
+Sample Execution:
+
+$ sh 01b_link.sh
+enter the path to create hard link for: temp.txt
+enter the hard link name: temphl1.txt
+success
+
+$ ll
+total 224
+drwxr-xr-x 3 r3dacted42 r3dacted42 4096 Aug 28 14:17 ./
+drwxr-xr-x 3 r3dacted42 r3dacted42 4096 Aug 13 15:53 ../
+...
+-rw-r--r-- 2 r3dacted42 r3dacted42   30 Aug 22 15:55 temp.txt
+-rw-r--r-- 2 r3dacted42 r3dacted42   30 Aug 22 15:55 temphl1.txt
+
+sample

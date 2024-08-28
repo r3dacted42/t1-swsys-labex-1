@@ -12,3 +12,7 @@ if [ $# -eq 1 ]
 then
     echo "i was created at $(date +%c), 30 seconds after the daemon was started" > once.txt
 fi
+
+<<sample
+Check 30_daemon.c for Sample Execution...
+sample

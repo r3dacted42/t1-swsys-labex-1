@@ -46,3 +46,34 @@ int main(void) {
     
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 25_fav_child.c
+i'm the first child, pid 261283
+i'm the second child, pid 261284
+i'm the favourite child, pid 261285
+
+first child status:
+Name:   run-1724844689.
+State:  Z (zombie)
+Tgid:   261283
+Ngid:   0
+Pid:    261283
+PPid:   261282
+
+second child status:
+Name:   run-1724844689.
+State:  Z (zombie)
+Tgid:   261284
+Ngid:   0
+Pid:    261284
+PPid:   261282
+
+favourite child status:
+cat: /proc/261285/status: No such file or directory
+
+((the third process was safely terminated after the waitpid call))
+
+*/

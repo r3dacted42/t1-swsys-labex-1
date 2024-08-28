@@ -26,3 +26,12 @@ int main(void) {
     
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 12_openmode.c
+enter the filename to open: temp.txt
+mode returned by fcntl: 102002
+
+*/

@@ -19,3 +19,21 @@ then
 else
     echo "failed";
 fi
+
+<<sample
+Sample Execution:
+
+$ sh 01a_symlink.sh
+enter the filename to create soft link for: temp.txt
+enter the soft link name: tempsl1.txt
+success
+
+$ ll
+total 224
+drwxr-xr-x 3 r3dacted42 r3dacted42 4096 Aug 28 14:17 ./
+drwxr-xr-x 3 r3dacted42 r3dacted42 4096 Aug 13 15:53 ../
+...
+-rw-r--r-- 1 r3dacted42 r3dacted42   30 Aug 22 15:55 temp.txt
+lrwxrwxrwx 1 r3dacted42 r3dacted42    8 Aug 28 14:17 tempsl1.txt -> temp.txt
+
+sample

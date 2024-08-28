@@ -43,3 +43,36 @@ int init_daemon() {
 int main(void) {
     return init_daemon();
 }
+
+/*
+Sample Execution:
+
+$ runc 30_daemon.c
+((no output on terminal))
+
+--after some time:
+$ cat .log
+[264390] daemon started at 1724847831
+[264390] daemon still running at 1724847831
+[264390] daemon still running at 1724847841
+[264390] daemon still running at 1724847851
+[264390] daemon still running at 1724847861
+[264390] daemon still running at 1724847871
+[264390] daemon still running at 1724847881
+[264390] daemon still running at 1724847891
+[264390] daemon still running at 1724847901
+[264390] daemon still running at 1724847911
+[264390] daemon still running at 1724847921
+[264390] daemon still running at 1724847931
+[264390] daemon still running at 1724847941
+
+$ cat ~/running.txt
+modified by daemon at Wed Aug 28 17:56:01 2024
+
+$ cat ~/once.txt
+i was created at Wed Aug 28 17:54:31 2024, 30 seconds after the daemon was started
+
+$ kill 264390
+((terminate the daemon))
+
+*/

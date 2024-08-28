@@ -24,3 +24,18 @@ int main(void) {
     sprintf(cmd, "cat /proc/%d/status | head -n 6", pid);
     return system(cmd);
 }
+
+/*
+Sample Execution:
+
+$ runc 23_zombie.c
+look for 260779, i will be a zombie :D
+press enter to view status of child process:
+Name:   run-1724844560.
+State:  Z (zombie)
+Tgid:   260779
+Ngid:   0
+Pid:    260779
+PPid:   260778
+
+*/

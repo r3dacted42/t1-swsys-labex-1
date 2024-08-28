@@ -27,3 +27,17 @@ int main(void) {
 
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 03_creat.c
+enter the filename to create: tempfile.txt
+fd of created file: 3
+
+$ ll
+...
+-rwxr-xr-x 1 r3dacted42 r3dacted42    0 Aug 28 14:35 tempfile.txt*
+...
+
+*/

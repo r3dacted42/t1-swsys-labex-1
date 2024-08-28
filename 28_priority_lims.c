@@ -19,3 +19,16 @@ int main(void) {
     
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 28_priority_lims.c
+round robin:
+  max: 99
+  min: 1
+first in first out (fcfs):
+  max: 99
+  min: 1
+
+*/

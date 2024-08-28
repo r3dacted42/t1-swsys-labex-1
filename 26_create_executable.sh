@@ -26,3 +26,18 @@ int main(int argc, char **argv) {
     }
     return 0;
 }''' | gcc -o 26_executable.o -xc -;
+
+<<sample
+Sample Execution:
+
+$ sh 26_create_executable.sh
+creating executable program to run using 26(a) and 26(b)...
+
+$ ll
+...
+-rw-r--r-- 1 r3dacted42 r3dacted42   831 Aug 22 14:35 26_create_executable.sh
+-rwxr-xr-x 1 r3dacted42 r3dacted42 16104 Aug 28 17:03 26_executable.o*
+-rw-r--r-- 1 r3dacted42 r3dacted42   479 Aug 22 14:32 26a_run_executable.c
+...
+
+sample

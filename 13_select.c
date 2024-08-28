@@ -33,3 +33,16 @@ int main(void) {
 
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 13_select.c
+hehe
+data found within 10 seconds! read: hehe
+
+--on not entering data
+$ runc 13_select.c
+data not found within 10 seconds
+
+*/

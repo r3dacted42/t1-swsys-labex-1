@@ -36,3 +36,16 @@ int main(void) {
     sprintf(cmd, "od %s", fname);
     return system(cmd);
 }
+
+/*
+Sample Execution:
+
+$ runc 10_rwlseek.c
+enter the name of a file to write to: tempseek.c
+return value of lseek: 20
+output of od command:
+0000000 064560 067560 070055 070151 020557 000000 000000 000000
+0000020 000000 000000 064560 067560 070055 070151 020557
+0000036
+
+*/

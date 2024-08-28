@@ -25,3 +25,21 @@ int main(void) {
     sleep(1);
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 24_orphan.c
+i'm 261049, my parent (261048) will leave me soon :(
+$
+i have been adopted by 229069 :D
+this is my status (head):
+Name:   run-1724844628.
+Umask:  0022
+State:  S (sleeping)
+Tgid:   261049
+Ngid:   0
+Pid:    261049
+PPid:   229069
+
+*/

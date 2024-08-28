@@ -23,3 +23,21 @@ int main(void) {
   
   return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 01b_link.c
+enter the path to create hard link for: temp.txt
+enter the hard link name: temphl.txt
+perror response: : Success
+
+$ ll
+total 224
+drwxr-xr-x 3 r3dacted42 r3dacted42 4096 Aug 28 14:17 ./
+drwxr-xr-x 3 r3dacted42 r3dacted42 4096 Aug 13 15:53 ../
+...
+-rw-r--r-- 2 r3dacted42 r3dacted42   30 Aug 22 15:55 temp.txt
+-rw-r--r-- 2 r3dacted42 r3dacted42   30 Aug 22 15:55 temphl.txt
+
+*/

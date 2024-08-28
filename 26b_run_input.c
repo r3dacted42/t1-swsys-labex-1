@@ -29,3 +29,18 @@ int main(void) {
     }
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 26b_run_input.c
+cmd line arguments to pass to executable: cmdarg1 cmdarg2 cmdarg3
+input to pass to stdin of executable: i will be passed using stdin, yayy!
+
+received 3 cmd line args:
+1 : cmdarg1
+2 : cmdarg2
+3 : cmdarg3
+read from stdin: i will be passed using stdin, yayy!
+
+*/

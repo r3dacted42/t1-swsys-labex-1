@@ -31,3 +31,13 @@ int main(void) {
 
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 20_nice.c
+soft limit for RLIMIT_NICE is 20
+current priority is 0
+priority after +5 is 5
+
+*/

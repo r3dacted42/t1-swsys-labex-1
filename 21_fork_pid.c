@@ -21,3 +21,11 @@ int main(void) {
     }
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 21_fork_pid.c
+pid of child: 260392, pid of parent: 260391
+
+*/

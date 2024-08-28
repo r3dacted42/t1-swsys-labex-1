@@ -22,3 +22,11 @@ int main(void) {
 
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 19_getpid_time.c
+getpid() took 0.000001 seconds
+
+*/

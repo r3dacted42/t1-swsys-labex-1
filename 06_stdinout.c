@@ -33,3 +33,12 @@ int main(void) {
     _printstr(inp, sizeof(inp) / sizeof(char));
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 06_stdinout.c
+please enter some text: eternal torment hehe :)
+you entered: eternal torment hehe :)
+
+*/

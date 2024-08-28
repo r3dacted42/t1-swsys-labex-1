@@ -37,3 +37,12 @@ int main(void) {
 
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 17_makedb.c 
+creating db file...
+db file successfully created!
+
+*/

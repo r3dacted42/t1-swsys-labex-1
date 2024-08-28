@@ -19,3 +19,11 @@ int main(void) {
     }
     return 0;
 }
+
+/*
+Sample Execution:
+
+$ runc 26a_run_executable.c
+no cmd line args received
+
+*/
